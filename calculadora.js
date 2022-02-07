@@ -23,3 +23,16 @@ boton_clear.addEventListener("click", borrarPantalla);
 function borrarPantalla() {
     setPantallaText("");
 }
+
+/**
+ * Seccion para botones de digitos
+ */
+
+let botones_numeros = document.getElementsByClassName("numero");
+
+// TODO: Mejorar la lectura de este codigo.
+for (let i=0; i<botones_numeros.length; i++) {
+    botones_numeros[i].addEventListener("click", () => {
+        concatPantallaText(botones_numeros[i].textContent);
+    });
+}
