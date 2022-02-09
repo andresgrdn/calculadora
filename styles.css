@@ -1,0 +1,29 @@
+#contenedor-calculadora {
+    padding: 10px;
+    width: 300px;
+    font-size: 17px;
+    background: #ddb3b3;
+}
+
+#pantalla {
+    margin: 10px;
+    padding: 10px;
+    height: 50px;
+    width: 250px;
+    background: whitesmoke;
+}
+
+#botones {
+    display: inline-block;
+}
+
+#botones > div{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 10px;
+    display: inherit;
+    background: lightseagreen;
+    color: floralwhite;
+    text-align: center;
+    width: 50px;
+}
