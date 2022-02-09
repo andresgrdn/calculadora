@@ -36,3 +36,23 @@ for (let i=0; i<botones_entrada.length; i++) {
         concatPantallaText(botones_entrada[i].textContent);
     });
 }
+
+/**
+ * Boton de igual, este boton generara la operacion.
+ */
+let boton_igual = document.getElementById("igual");
+
+boton_igual.addEventListener("click", calcularOperacion);
+
+function calcularOperacion() {
+    /**  
+     * Validar entrada en la pantalla
+     *  - Obtener el texto en pantalla ✔
+     *  - Revisar si el texto en la pantalla no esta vacio
+     *  - Hacer el calculo
+     *  - Escribir el resultado en la pantalla
+     */ 
+
+    let entrada = pantalla.textContent;
+    console.log("Entrada : ", entrada);
+}
