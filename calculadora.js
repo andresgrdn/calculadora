@@ -25,14 +25,14 @@ function borrarPantalla() {
 }
 
 /**
- * Seccion para botones de digitos
+ * Seccion para botones de entrada
  */
 
-let botones_numeros = document.getElementsByClassName("numero");
+let botones_entrada = document.getElementsByClassName("entrada");
 
 // TODO: Mejorar la lectura de este codigo.
-for (let i=0; i<botones_numeros.length; i++) {
-    botones_numeros[i].addEventListener("click", () => {
-        concatPantallaText(botones_numeros[i].textContent);
+for (let i=0; i<botones_entrada.length; i++) {
+    botones_entrada[i].addEventListener("click", () => {
+        concatPantallaText(botones_entrada[i].textContent);
     });
 }
