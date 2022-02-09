@@ -63,8 +63,8 @@ function calcularOperacion() {
     /**  
      * Validar entrada en la pantalla
      *  - Obtener el texto en pantalla ✔
-     *  - Revisar si el texto en la pantalla no esta vacio
-     *  - Hacer el calculo
+     *  - Revisar si el texto en la pantalla no esta vacio ✔
+     *  - Hacer el calculo ✔
      *  - Escribir el resultado en la pantalla
      */ 
 
@@ -72,4 +72,12 @@ function calcularOperacion() {
     let entrada = pantalla.textContent;
     console.log("Entrada : ", entrada);
 
+    // Verificar que el texto no este vacio
+    if (entrada == "") return false;
+
+    // Calculo de la operacion
+    let resultado = eval(entrada);
+
+    // Escribir el resultado en pantalla
+    setPantallaText(resultado);
 }
