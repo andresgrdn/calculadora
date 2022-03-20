@@ -1,4 +1,4 @@
-let pantalla = document.getElementById("pantalla");
+let pantalla = document.getElementsByClassName("pantalla")[0];
 
 function getPantallaText() {
 
@@ -23,7 +23,7 @@ function concatPantallaText(texto) {
  * Seccion para boton borrar la pantalla
  */
 
-let boton_clear = document.getElementById("borrar");
+let boton_clear = document.getElementsByClassName("borrar")[0];
 
 boton_clear.addEventListener("click", borrarPantalla);
 
@@ -54,7 +54,7 @@ for (let i=0; i<botones_entrada.length; i++) {
  * Boton de igual, este boton generara la operacion.
  */
 
-let boton_igual = document.getElementById("igual");
+let boton_igual = document.getElementsByClassName("igual")[0];
 
 boton_igual.addEventListener("click", calcularOperacion);
 
