@@ -4,6 +4,14 @@
   --btn-bkg-color: #20b2aa;
   --btn-text-color: #fffaf0;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
 .contenedor-calculadora {
   padding: 10px;
   margin: auto;
