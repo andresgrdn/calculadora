@@ -1,16 +1,22 @@
+:root {
+  --bkg-color-pantalla: #f5f5f5;
+  --bkg-color-contenedor-calculadora: #ddb3b3;
+  --btn-bkg-color: #20b2aa;
+  --btn-text-color: #fffaf0;
+}
 .contenedor-calculadora {
   padding: 10px;
   margin: auto;
   width: 300px;
   font-size: 17px;
-  background: #ddb3b3;
+  background: var(--bkg-color-contenedor-calculadora);
 }
 .pantalla {
   margin: 10px;
   padding: 10px;
   height: 50px;
   width: 250px;
-  background: whitesmoke;
+  background: var(--bkg-color-pantalla);
 }
 .botones {
   display: inline-block;
@@ -20,8 +26,8 @@
   padding-bottom: 25px;
   margin: 10px;
   display: inherit;
-  background: lightseagreen;
-  color: floralwhite;
+  background: var(--btn-bkg-color);
+  color: var(--btn-text-color);
   text-align: center;
   width: 50px;
 }
