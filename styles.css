@@ -1,8 +1,9 @@
 :root {
-  --bkg-color-pantalla: #f5f5f5;
-  --bkg-color-contenedor-calculadora: #ddb3b3;
-  --btn-bkg-color: #20b2aa;
-  --btn-text-color: #fffaf0;
+  --bkg-color-pantalla: #f7c59f;
+  --bkg-color-contenedor-calculadora: #2a324b;
+  --btn-bkg-color: #767b91;
+  --btn-text-color: #e1e5ee;
+  --btn-igual-bkg-color: #db3a34;
 }
 * {
   box-sizing: border-box;
@@ -13,29 +14,38 @@ html {
   font-size: 62.5%;
 }
 .contenedor-calculadora {
-  padding: 10px;
+  padding: 1rem;
   margin: auto;
-  width: 300px;
-  font-size: 17px;
+  width: 30rem;
   background: var(--bkg-color-contenedor-calculadora);
+  border-radius: 0.5rem;
 }
 .pantalla {
-  margin: 10px;
-  padding: 10px;
-  height: 50px;
-  width: 250px;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  width: 25.5rem;
+  height: 5rem;
+  border-radius: 0.5rem;
   background: var(--bkg-color-pantalla);
+  font-size: 2rem;
+  font-weight: 600;
 }
 .botones {
-  display: inline-block;
+  width: 30rem;
 }
-.botones > div {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin: 10px;
-  display: inherit;
+.botones button {
+  display: inline-block;
+  margin: 0.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  width: 19%;
+  border-radius: 0.5rem;
   background: var(--btn-bkg-color);
   color: var(--btn-text-color);
+  font-size: 1.6rem;
+  font-weight: 600;
   text-align: center;
-  width: 50px;
+}
+.botones .igual {
+  background: var(--btn-igual-bkg-color);
 }
